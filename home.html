@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">>
+
+<style>
+  .bus-button{
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 20px;
+    color: black; 
+    margin: 0 3px;
+    text-decoration: none;
+    background-color: #fc7674;
+    cursor: pointer;
+  }
+
+  .bus-button:hover{
+    color: white;
+    background-color: red;
+  }
+
+.c1-h1{
+  width: 800px;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 250px;
+}
+
+#input-text{
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 300px;
+}
+
+.srch-button{
+  border: none; 
+  margin-top: 5px;
+  padding: 0 10px;
+    border-radius: 20px;
+    color: white; 
+    text-decoration: none;
+    background-color: rgb(111, 36, 36);
+    cursor: pointer;
+}
+
+.review-img{
+  width: 300px;
+}
+
+.review-img img{
+width: 130px;
+height: 110px;
+border-radius: 5px;
+padding: 0 2px;
+}
+
+
+.review-img2{
+  width: 300px;
+}
+
+.review-img2 img{
+width: 270px;
+height: 110px;
+border-radius: 5px;
+padding: 0 2px;
+}
+
+#img-text a{
+  text-decoration: none;
+}
+
+#img-text a:hover{
+color: black;
+text-decoration: underline;
+}
+
+.star-rating{
+color: orange;
+}
+
+#card-cont{
+  padding: 0 50px;
+}
+
+#button-cont{
+  padding: 0 50px;
+  
+}
+
+.cat-button{
+border: 1px solid rgb(170, 167, 167);
+margin: 0 40px;
+
+}
+
+.button-link{
+ float: left;
+ width: 200px;
+ margin: 0 35px;
+ cursor: pointer;
+}
+
+.button-link:hover{
+  transform: scale(1.1)
+}
+
+.values-text{
+width: 200px;
+padding-left: 300px;
+padding-top: 500px;
+}
+
+.value-left{
+  width: 500px;
+ 
+  float: left;
+  text-align: center;
+  margin: auto;
+ padding-top: 110px;
+}
+
+.value-left p{
+  width: 500px;
+  font-size: 18px;
+  float: left;
+  text-align: center;
+ padding: 20px;
+ color: rgb(110, 112, 114);
+  
+}
+
+.value-right img{
+  height: 380px;
+  width: 691px;
+  float: right;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+  <nav class="navbar bg-dark navbar-dark navbar-expand-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/sm logo.jpg" style="height: 40px;" class="rounded-pill">
+        Welp
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="values.html" class="nav-link">Our Values</a></li>
+        <div class="btn-group ">
+            <li class="nav-item" data-bs-toggle="dropdown"><a href="#life" class="nav-link  dropdown-toggle">Life at Welp</a></li>
+          <div class="dropdown-menu">
+            <a href="career.html" class="dropdown-item">Career</a>
+            <a href="benefits.html" class="dropdown-item">Benefits</a>
+            <a href="jobs.html" class="dropdown-item">Explore jobs</a>
+          </div>
+        </div>
+          <li class="nav-item"><a href="review.html" class="nav-link">Write a review</a></li>
+
+          <a href="business.html"><button class="bus-button">
+            For business
+          </button></a>
+        </ul>
+
+
+
+       <a href="login.html"><button style="border: none; padding: 5px 8px; border-radius: 4px; margin: 0 7px; text-decoration: none;">
+          Log In 
+        </button></a>
+
+        <a href="signup.html"><button style="background-color: red; padding: 5px 8px; color: white; border: none; padding: 5px 8px; border-radius: 3px; text-decoration: none;">
+          Sign Up
+        </button></a>
+      </div>
+
+    </div>
+  </nav>
+
+<br><br>
+  <div class="container-fluid" style="height: 500px; background-color: rgb(252, 63, 63);">
+    <h1 class="c1-h1">Read reviews. Write reviews
+      Find companies you can trust
+    </h1>
+    
+    <form class="d-flex">
+      <input type="text" placeholder ="Company or Category" class="form-control me-2" id="input-text">
+      <button class="srch-button">Search</button>
+    </form>
+  </div>
+  
+<div id="home" class="container mt-5 mb-5">
+    <h1 style="text-align: center; font-weight: bold;">Recent Activity</h1>
+
+  <div class="container mt-5" id="card-cont">
+    <div class="row">
+    <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/review1.jpg" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Nadia I. added 2 photos</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">Just now</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">Chevys Fresh Mex</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9733; &#9733; &#9734;
+      </div>
+      <p style=" margin: 0 0; margin-top: 0; margin-bottom: 18px; font-size: 13px; color: rgb(110, 112, 114) ">&dollar;&dollar; &#183;Mexican, Bars, Breakfast & Brunch</p>
+       <div class="review-img">
+        <img src="images/review11.jpg" style="margin-left: 5px;">
+        <img src="images/review12.jpg" style="margin-right: 5px;"> 
+       </div>
+      </div>
+    </div>
+
+
+    <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/review2.jpg" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Gina T. added a photo</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">1 minute ago</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">Tiny Sushi - Oh Baby</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9733; &#9733; &#9734;
+      </div>
+      <p style=" margin: 0 0; margin-top: 0; margin-bottom: 18px; font-size: 13px; color: rgb(110, 112, 114) ">Sushi Bars, Japanese, Vegetarian</p>
+      <div class="review-img2">
+        <img src="images/rev32.jpg">
+       </div>
+      </div>
+    </div>
+
+    <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/review2.jpg" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Gina T. added 2 photos</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">1 minute ago</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">Tiny Sushi - Oh Baby</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9733; &#9733; &#9733;
+      </div>
+      <p style=" margin: 0 0; margin-top: 0; margin-bottom: 18px; font-size: 13px; color: rgb(110, 112, 114) ">Sushi Bars, Japanese, Vegetarian</p>
+       <div class="review-img">
+        <img src="images/rev30.jpg" style="margin-left: 5px;">
+        <img src="images/rev31.jpg" style="margin-right: 5px;"> 
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="container mt-5" id="card-cont">
+    <div class="row">
+    <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/profile1.png" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Marilyn added a photo</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">CVS Pharmacy</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9734; &#9734; &#9734;
+      </div>
+      <div class="review-img2">
+        <img src="images/prof1.jpg" style="margin-top: 5px; height: 150px;">
+       </div>
+      </div>
+    </div>
+
+
+    <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/profile2.jpg" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Nathan G. wrote a review</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">Citylaila</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9733; &#9733; &#9733;
+      </div>
+      <p style="width: 300px; text-align: center; font-size: 15px;  padding-right: 25px; margin-top: 20px;">Booked some Ferrari World tickets in Abu Dhabi on the morning we went to visit it. The service was good and very fast. Ticket arrived on WhatsApp within 5 mins. Great service and would highly recommend.</p>
+      </div>
+    </div>
+
+    <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/profile3.jpg" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Salam A. added a photo</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">Alamar Dominican Kitchen</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9733; &#9733; &#9734;
+      </div>
+      <p style=" margin: 0 0; margin-top: 0; margin-bottom: 18px; font-size: 13px; color: rgb(110, 112, 114) ">&dollar;&dollar; &#183;Cocktail Bars, Dominican</p>
+      <div class="review-img2">
+        <img src="images/prof3.jpg">
+       </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="container mt-5" id="card-cont">
+    <div class="row">
+      <div class="card ms-5" style="width: 330px;">
+        <div class="card-header" style="background-color: white;">
+          <img src="images/profile4.jpg" style="border-radius: 50px; height: 55px; float: left;">
+          <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Alexa A. added a photo</p><br>
+          <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+        </div>
+        <div class="card-body" id="img-text">
+          <a href="#">
+            <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">四姐 Special Noodle</p>
+          </a>
+          <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+            &#9733; &#9733; &#9733; &#9733; &#9734;
+        </div>
+        <p style=" margin: 0 0; margin-top: 0; margin-bottom: 18px; font-size: 13px; color: rgb(110, 112, 114) ">&dollar;&dollar; &#183;Chinese, Noodles</p>
+        <div class="review-img2">
+          <img src="images/prof4.jpg" style="margin-top: 5px;">
+         </div>
+       </div>
+       </div>
+  
+  
+       <div class="card ms-5" style="width: 330px;">
+        <div class="card-header" style="background-color: white;">
+          <img src="images/profile5.jpg" style="border-radius: 50px; height: 55px; float: left;">
+          <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Couchman added a photo</p><br>
+          <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+        </div>
+        <div class="card-body" id="img-text">
+          <a href="#">
+            <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">The Line Coffee</p>
+          </a>
+          <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+            &#9733; &#9733; &#9734; &#9734; &#9734;
+        </div>
+        <div class="review-img2">
+          <img src="images/prof5.jpg" style="margin-top: 20px; height: 150px;">
+         </div>
+        </div>
+       </div>
+  
+       <div class="card ms-5" style="width: 330px;">
+        <div class="card-header" style="background-color: white;">
+          <img src="images/profile3.jpg" style="border-radius: 50px; height: 55px; float: left;">
+          <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Richard wrote a review</p><br>
+          <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+        </div>
+        <div class="card-body" id="img-text">
+          <a href="#">
+            <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">Shadestation</p>
+          </a>
+          <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+            &#9733; &#9733; &#9733; &#9733; &#9733;
+        </div>
+        <p style="width: 300px; text-align: center; font-size: 15px;  padding-right: 25px; margin-top: 20px;">Fantastic experience with Shade Station. I left my glasses in a taxi whilst on holiday and was essentially blind for the rest of my trip.
+        
+        I got back on Sunday, placing my order in the afternoon, and they arrived by Monday lunchtime.</p>
+        </div>
+    </div>
+  </div>
+  </div>
+
+<div class="container mt-5" id="card-cont">
+  <div class="row">
+    <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/profile4.jpg" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Alexa A. added a photo</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">四姐 Special Noodle</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9733; &#9733; &#9734;
+      </div>
+      <p style=" margin: 0 0; margin-top: 0; margin-bottom: 18px; font-size: 13px; color: rgb(110, 112, 114) ">&dollar;&dollar; &#183;Chinese, Noodles</p>
+      <div class="review-img2">
+        <img src="images/prof4.jpg" style="margin-top: 5px;">
+       </div>
+     </div>
+     </div>
+
+
+     <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/profile5.jpg" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Couchman added a photo</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">The Line Coffee</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9734; &#9734; &#9734;
+      </div>
+      <div class="review-img2">
+        <img src="images/prof5.jpg" style="margin-top: 20px; height: 150px;">
+       </div>
+      </div>
+     </div>
+
+     <div class="card ms-5" style="width: 330px;">
+      <div class="card-header" style="background-color: white;">
+        <img src="images/profile3.jpg" style="border-radius: 50px; height: 55px; float: left;">
+        <p style="text-align: center; float: left; padding-left: 4px; padding-top: 5px; margin: 0 0;">Richard wrote a review</p><br>
+        <p style="font-size: 12px;  color: rgb(110, 112, 114);  padding-left: 4px; padding-top: 5px; margin: 0 0;">2 minutes ago</p>
+      </div>
+      <div class="card-body" id="img-text">
+        <a href="#">
+          <p style="font-weight: bold; color: rgb(34, 33, 33); margin-bottom: 0;">Shadestation</p>
+        </a>
+        <div style="color: rgb(252, 63, 63); font-size: 24px; margin: 0 0;">
+          &#9733; &#9733; &#9733; &#9733; &#9733;
+      </div>
+      <p style="width: 300px; text-align: center; font-size: 15px;  padding-right: 25px; margin-top: 20px;">Fantastic experience with Shade Station. I left my glasses in a taxi whilst on holiday and was essentially blind for the rest of my trip.
+      
+      I got back on Sunday, placing my order in the afternoon, and they arrived by Monday lunchtime.</p>
+      </div>
+  </div>
+</div>
+
+
+
+<div id="categories" class="container-fluid mt-5 mb-5">
+  <h1 style="text-align: center; font-weight: bold;">Categories</h1>
+
+
+  <div class="container mt-5" id="button-cont">
+    <div class="row">
+
+      <a href="#" class="button-link">
+  <button style="height: 200px; width: 200px; background-color: white;" class="cat-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 40 40">
+      <g fill="none" fill-rule="evenodd">
+        <path fill="#EEEEEF" fill-rule="nonzero" d="M14.5298902 21.5C14.507851 26.018456 17.8394458 29.8528924 22.3167165 30.4619752 26.7939872 31.0710581 31.0288181 28.2659495 32.2145073 23.9057803 33.4001964 19.545611 31.1691372 14.982191 27 13.24L27 18.35C27.0026654 19.3188548 26.6189689 20.248796 25.9338825 20.9338825 25.2487961 21.6189689 24.3188548 22.0026654 23.35 22L19 22 19 13.75C16.2405708 15.357347 14.5395286 18.3065813 14.5298902 21.5zM19 11.51L19 7.71999997C17.5714457 8.1762516 16.2221339 8.85090753 15 9.71999997L15 14.55C16.080969 13.2416667 17.4500076 12.2011973 19 11.51z"/>
+        <path fill="#EEEEEF" fill-rule="nonzero" d="M27,7.43999997 L27,11.11 C31.2629016,12.5339001 34.2307926,16.4079586 34.4958841,20.894555 C34.7609756,25.3811515 32.2699411,29.5777517 28.2043775,31.4937409 C24.138814,33.4097301 19.3165598,32.6596835 16.0250022,29.5993779 C12.7334445,26.5390724 11.634721,21.7841263 13.25,17.59 C12.772553,17.8551824 12.2361342,17.9961643 11.69,18 L9.42999997,18 C8.00976646,23.6910487 10.1581303,29.6771966 14.8730578,33.1664023 C19.5879854,36.655608 25.9406594,36.9605151 30.9680841,33.9389098 C35.9955088,30.9173045 38.7073066,25.164428 37.8386486,19.3635202 C36.9699906,13.5626124 32.6919982,8.85642334 27,7.43999997 Z"/>
+        <path fill="#F43939" fill-rule="nonzero" d="M23.5 25L18.5 25C18.2238576 25 18 25.2238576 18 25.5L18 35C18 36.6568543 19.3431457 38 21 38 22.6568543 38 24 36.6568543 24 35L24 25.5C24 25.2238576 23.7761424 25 23.5 25zM11.5 21L6.49999996 21C6.22385759 21 5.99999996 21.2238576 5.99999996 21.5L5.99999996 35C5.99999996 36.6568543 7.34314572 38 8.99999996 38 10.6568542 38 12 36.6568543 12 35L12 21.5C12 21.2238576 11.7761424 21 11.5 21z"/>
+        <path fill="#2B273C" fill-rule="nonzero" d="M23 23L19 23C18.4477152 23 18 22.5522848 18 22L18 6.76999995C18 4.00857621 20.2385763 1.76999995 23 1.76999995 25.7614238 1.76999995 28 4.00857621 28 6.76999995L28 18C28 19.3260824 27.4732158 20.597852 26.5355339 21.5355339 25.597852 22.4732158 24.3260825 23 23 23L23 23zM20 21L23 21C24.6568543 21 26 19.6568542 26 18L26 6.76999996C26 5.11314571 24.6568543 3.76999996 23 3.76999996 21.3431458 3.76999996 20 5.11314571 20 6.76999996L20 21zM15 1.99999996L2.99999995 1.99999996C2.44771521 1.99999996 1.99999996 2.44771521 1.99999996 2.99999995L1.99999996 15C1.99999996 17.209139 3.79086096 19 5.99999995 19L12 19C14.209139 19 16 17.209139 16 15L16 2.99999995C16 2.44771521 15.5522847 1.99999996 15 1.99999996zM14 15C14 16.1045695 13.1045695 17 12 17L5.99999996 17C4.89543046 17 3.99999996 16.1045695 3.99999996 15L3.99999996 3.99999996 5.99999996 3.99999996 5.99999996 12C5.99999996 12.5522847 6.44771522 13 6.99999996 13 7.55228472 13 7.99999996 12.5522847 7.99999996 12L7.99999996 3.99999996 9.99999996 3.99999996 9.99999996 12C9.99999996 12.5522847 10.4477152 13 11 13 11.5522847 13 12 12.5522847 12 12L12 3.99999996 14 3.99999996 14 15z"/>
+      </g>
+    </svg>
+
+    <h6 style="margin-top: 20px; ">Restaurants</h6>
+  </button>
+</a>
+
+
+<a href="#" class="button-link">
+  <button style="height: 200px; width: 200px; background-color: white;" class="cat-button">
+    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #eeeeef;
+          }
+    
+          .cls-2 {
+            fill: #ef3c3c;
+          }
+    
+          .cls-3 {
+            fill: #2b273c;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M32.74786,8a3.57329,3.57329,0,0,0,.39325-1.08008,3.77742,3.77742,0,0,0-3.7124-4.4707c-2.73035,0-4.271,2.46728-5.04639,4.32605-.77539-1.85877-2.31616-4.32605-5.04638-4.32605a3.77742,3.77742,0,0,0-3.71289,4.4707A3.57426,3.57426,0,0,0,16.01636,8H11v7h2v1H27V31H37V15h1V8ZM19.47168,8a1.87228,1.87228,0,0,1-1.88086-1.43555,1.77883,1.77883,0,0,1,1.74512-2.11523c1.772,0,2.853,2.13965,3.373,3.55078ZM31.17334,6.56445A1.87228,1.87228,0,0,1,29.29248,8H26.05225c.5166-1.41113,1.59472-3.55078,3.37646-3.55078a1.77773,1.77773,0,0,1,1.74463,2.11523Z"/>
+      <path class="cls-2" d="M22.80762,10.91309A3.70211,3.70211,0,0,0,19.96,9.58105c-2.65137,0-4.1593,2.37037-4.92633,4.184-.76691-1.81359-2.27484-4.184-4.92621-4.184a3.71246,3.71246,0,0,0-3.64795,4.39258A3.77573,3.77573,0,0,0,10.23975,17h4.481a.98594.98594,0,0,0,.31275-.07092A.98588.98588,0,0,0,15.34619,17h4.481a3.77419,3.77419,0,0,0,3.78027-3.02637A3.72453,3.72453,0,0,0,22.80762,10.91309ZM10.23975,15a1.8036,1.8036,0,0,1-1.8125-1.38184,1.7121,1.7121,0,0,1,1.68017-2.03711c1.70362,0,2.749,2.04688,3.25879,3.419Zm11.3999-1.38184A1.80282,1.80282,0,0,1,19.82715,15h-3.1294c.50635-1.37207,1.54932-3.419,3.26221-3.419a1.71211,1.71211,0,0,1,1.67969,2.03711Z"/>
+      <path class="cls-2" d="M27,20H4v2H9.07721L7.33105,28.5166a.50006.50006,0,0,0,.57764.6211l2.92334-.56348,2.09424,1.90234a.5001.5001,0,0,0,.81885-.24023L15.5,23.68713l1.75488,6.5492a.49985.49985,0,0,0,.81885.24023L20.168,28.57422l2.92334.56348a.50006.50006,0,0,0,.57764-.6211L21.92279,22H27Z"/>
+      <path class="cls-3" d="M25.58984,38H5.41016A2.41271,2.41271,0,0,1,3,35.58984V16a.99974.99974,0,0,1,1-1H27a.99974.99974,0,0,1,1,1V35.58984A2.41271,2.41271,0,0,1,25.58984,38ZM5,17V35.58984A.41042.41042,0,0,0,5.41016,36H25.58984A.41042.41042,0,0,0,26,35.58984V17Z"/>
+    </svg>
+
+    <h6 style="margin-top: 20px;">Shopping</h6>
+  </button>
+</a>
+
+
+
+<a href="#" class="button-link">
+  <button style="height: 200px; width: 200px; background-color: white;" class="cat-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+      <g fill="none" fill-rule="evenodd">
+        <path fill="#EEEEEF" fill-rule="nonzero" d="M34 3.99999996L4.99999996 3.99999996C3.89543046 3.99999996 2.99999996 4.89543046 2.99999996 5.99999996L2.99999996 13C2.99999996 14.1045695 3.89543046 15 4.99999996 15L12.52 15 16.3 5.83999996C16.4534036 5.46657446 16.8162981 5.22201511 17.22 5.21999996 17.6273435 5.21795981 17.9952126 5.46320588 18.15 5.83999996L21.92 15 34 15C35.1045695 15 36 14.1045695 36 13L36 5.99999996C36 4.89543046 35.1045695 3.99999996 34 3.99999996zM12.44 24.79L5.66999996 22 4.99999996 22C3.89543046 22 2.99999996 22.8954305 2.99999996 24L2.99999996 31C2.99999996 32.1045695 3.89543046 33 4.99999996 33L15.82 33 12.44 24.79zM22 24.79L18.62 33 22 33C23.1045695 33 24 32.1045695 24 31L24 24 22 24.79z"/>
+        <path fill="#2B273C" fill-rule="nonzero" d="M17.22,34.78 L17.22,34.78 C16.8162981,34.7779849 16.4534036,34.5334255 16.3,34.16 L12.44,24.79 L3.05999996,20.92 C2.69124662,20.7629117 2.45191831,20.4008188 2.45191831,20 C2.45191831,19.5991812 2.69124662,19.2370883 3.05999996,19.08 L12.44,15.21 L16.3,5.83999996 C16.4534036,5.46657446 16.8162981,5.22201511 17.22,5.21998733 C17.6273435,5.21795981 17.9952126,5.46320588 18.15,5.83999996 L22,15.21 L31.37,19.08 C31.7387534,19.2370883 31.9780817,19.5991812 31.9780817,20 C31.9780817,20.4008188 31.7387534,20.7629117 31.37,20.92 L22,24.79 L18.14,34.16 C17.9865964,34.5334255 17.6237019,34.7779849 17.22,34.78 Z M6.06999997,20 L13.58,23.1 C13.828125,23.1992753 14.026189,23.3937382 14.13,23.64 L17.22,31.15 L20.32,23.64 C20.4214749,23.3956507 20.6156507,23.2014749 20.86,23.1 L28.38,20 L20.86,16.9 C20.6156507,16.7985251 20.4214749,16.6043493 20.32,16.36 L17.22,8.84999997 L14.13,16.36 C14.026189,16.6062618 13.828125,16.8007247 13.58,16.9 L6.06999997,20 Z"/>
+        <path fill="#EF3C3C" fill-rule="nonzero" d="M26.37 9.07999997L29.53 10.38 30.83 13.54C30.9840889 13.9151171 31.349468 14.1600329 31.755 14.1600329 32.1605321 14.1600329 32.5259112 13.9151171 32.68 13.54L34 10.38 37.16 9.07999997C37.529505 8.92350078 37.769673 8.56128017 37.7700424 8.15999997 37.7737122 7.75508855 37.5328714 7.38790504 37.16 7.22999997L34 5.92999996 32.7 2.77999996C32.5459112 2.4048828 32.1805321 2.15996706 31.775 2.15996706 31.369468 2.15996706 31.0040889 2.4048828 30.85 2.77999996L29.55 5.92999996 26.39 7.22999997C26.0132059 7.38478734 25.7679599 7.75265644 25.7699874 8.15999997 25.768611 8.55888642 26.0044113 8.92044684 26.37 9.07999997zM37.14 31L34 29.7 32.7 26.54C32.5459112 26.1648829 32.1805321 25.9199671 31.775 25.9199671 31.369468 25.9199671 31.0040889 26.1648829 30.85 26.54L29.55 29.7 26.37 31C25.9965745 31.1534036 25.7520152 31.5162981 25.7499874 31.92 25.7479599 32.3273436 25.9932059 32.6952127 26.37 32.85L29.53 34.15 30.83 37.3C30.9840889 37.6751172 31.349468 37.9200329 31.755 37.9200329 32.1605321 37.9200329 32.5259112 37.6751172 32.68 37.3L34 34.15 37.16 32.85C37.5328714 32.692095 37.7737122 32.3249115 37.7700424 31.92 37.766325 31.5138481 37.5173502 31.1502658 37.14 31z"/>
+      </g>
+    </svg>
+
+    <h6 style="margin-top: 20px; ">Nightlife</h6>
+  </button>
+</a>
+
+<a href="#" class="button-link">
+  <button style="height: 200px; width: 200px; background-color: white;" class="cat-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+      <g fill="none" fill-rule="evenodd">
+        <path fill="#EEEEEF" fill-rule="nonzero" d="M29.07 19C31.5724301 25.4583852 28.9420987 32.773861 22.9 36.16 26.1687885 38.5242143 30.5750062 38.5634495 33.8853772 36.2578193 37.1957483 33.9521891 38.6866533 29.805685 37.6024324 25.919948 36.5182114 22.034211 33.0958661 19.2586306 29.07 19L29.07 19zM4.93999996 15.45C7.58513951 12.0203015 11.6687726 10.008023 16 9.99999998 16.33 9.99999998 16.65 9.99999998 17 10.05 17.0102345 9.86680947 17.0102345 9.68319047 17 9.49999997 17.0021234 5.98188499 14.5585629 2.93513088 11.1239036 2.17338744 7.68924427 1.411644 4.18672677 3.1396688 2.70130442 6.32881571 1.21588207 9.51796261 2.1468382 13.310985 4.93999996 15.45L4.93999996 15.45z"/>
+        <path fill="#2B273C" fill-rule="nonzero" d="M26.35,18 C29.3954161,23.2197016 28.0842072,29.8896702 23.2895534,33.5681398 C18.4948995,37.2466095 11.712911,36.7857608 7.45995175,32.4924891 C3.20699248,28.1992174 2.81014392,21.4131832 6.53368143,16.6534445 C10.2572189,11.8937058 16.9392603,10.6454781 22.13,13.74 L23.58,12.29 C17.5733704,8.41576127 9.61278919,9.68842626 5.11343456,15.2422657 C0.614079928,20.7961052 1.02091992,28.8475033 6.057202,33.9195037 C11.0934841,38.991504 19.1418059,39.4552335 24.7273038,34.9952405 C30.3128018,30.5352475 31.6416928,22.5838591 27.81,16.55 L26.35,18 Z"/>
+        <path fill="#F43939" fill-rule="nonzero" d="M22.61,21.71 C23.6062682,24.5877925 22.6276307,27.7795185 20.1894852,29.6042613 C17.7513397,31.4290041 14.413178,31.4680319 11.9330371,29.7007908 C9.45289623,27.9335497 8.39990488,24.7655762 9.32861911,21.865278 C10.2573333,18.9649798 12.9546371,16.9979009 16,16.9999954 C16.8188285,17.0036678 17.630833,17.1491519 18.4,17.43 L19.92,15.91 C18.7000681,15.3110218 17.359047,14.9997133 16,14.9999954 C11.9968871,14.9959577 8.47226386,17.6364383 7.35110198,21.4793441 C6.2299401,25.3222498 7.7817587,29.4437746 11.1590326,31.5929488 C14.5363064,33.7421231 18.9271637,33.4023013 21.9335392,30.7590769 C24.9399147,28.1158525 25.8390978,23.8046373 24.14,20.18 L22.61,21.71 Z"/>
+        <circle cx="16" cy="24" r="3.5" fill="#F43939" fill-rule="nonzero"/>
+        <path fill="#2B273C" fill-rule="nonzero" d="M38.06,8.99999997 C37.9530458,8.64760376 37.6610601,8.38251149 37.3,8.30999997 L33.83,7.61999997 L35.66,5.78999996 C35.9136586,5.5363414 36.0127236,5.16662598 35.9198781,4.82012193 C35.8270326,4.47361788 35.5563821,4.2029674 35.2098781,4.11012192 C34.863374,4.01727644 34.4936586,4.11634139 34.24,4.36999996 L32.41,6.23999997 L31.72,2.76999996 C31.6457573,2.39739988 31.3667848,2.09905423 31,1.99999995 C30.6460863,1.89188436 30.2613989,1.98805618 30,2.24999996 L25,7.24999997 C24.7658837,7.48640372 24.6646756,7.82376402 24.73,8.14999997 L25.73,12.93 L15.34,23.31 C15.1506873,23.4977666 15.0442017,23.7533625 15.0442017,24.02 C15.0442017,24.2866375 15.1506873,24.5422334 15.34,24.73 C15.5277666,24.9193127 15.7833625,25.0257983 16.05,25.0257983 C16.3166375,25.0257983 16.5722334,24.9193127 16.76,24.73 L27.18,14.3 L31.96,15.3 L32.15,15.3 C32.415803,15.3015367 32.6712812,15.1971865 32.86,15.01 L37.86,10.01 C38.1081785,9.73615589 38.1850889,9.34775837 38.06,8.99999997 Z M26.87,8.19999997 L30.12,4.99999996 L30.71,7.99999996 L27.46,11.25 L26.87,8.19999997 Z M31.82,13.15 L28.88,12.56 L32.13,9.30999997 L35.07,9.89999997 L31.82,13.15 Z"/>
+      </g>
+    </svg>
+    
+
+    <h6 style="margin-top: 20px; ">Active Life</h6>
+  </button>
+</a>
+   </div>
+</div>
+
+<div class="container mt-5" id="button-cont">
+    <div class="row">
+      <a href="#" class="button-link">
+  <button style="height: 200px; width: 200px; background-color: white;" class="cat-button">
+    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #eeeeef;
+          }
+    
+          .cls-2 {
+            fill: #ef3c3c;
+          }
+    
+          .cls-3 {
+            fill: #2b273c;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M37.88934,28.27686a5.31542,5.31542,0,0,0-6.51013-3.75867c-.11017.02954-.20514.08435-.31171.12036l-.44085-1.64539L34.65039,7.97632A4.7058,4.7058,0,0,0,31.32288,2.213l-.26807-.0719-3.00775,11.2251L25.03937,2.14111l-.26807.0719a4.70576,4.70576,0,0,0-3.32745,5.76331l4.02368,15.01684-.44086,1.64527c-.10657-.03589-.20147-.0907-.31164-.12024a5.31547,5.31547,0,1,0,3.33209,7.59668,5.314,5.314,0,0,0,9.84222-3.838ZM25.90643,30.34045a2.65777,2.65777,0,1,1-1.87933-3.25512A2.6577,2.6577,0,0,1,25.90643,30.34045Zm7.53638,1.87928a2.65776,2.65776,0,1,1,1.87933-3.25513A2.65776,2.65776,0,0,1,33.44281,32.21973Z"/>
+      <polygon class="cls-2" points="5.716 19.276 5.562 15.808 13.559 11.191 18.742 11.651 18.774 11.738 5.716 19.276"/>
+      <polygon class="cls-2" points="12.058 29 6 29 19.199 21.329 19.285 24.776 12.058 29"/>
+      <path class="cls-3" d="M20.64648,28H20V12h.64648a1,1,0,0,0,0-2h-.72113A7.50649,7.50649,0,0,0,13.5,3.57446v-.551a1,1,0,0,0-2,0v.551A7.50649,7.50649,0,0,0,5.07465,10H4.5a1,1,0,0,0,0,2H5v2H2v2H5v8H2v2H5v2H4.5a1,1,0,0,0,0,2h.57465A7.50649,7.50649,0,0,0,11.5,36.42554v.551a1,1,0,0,0,2,0v-.551A7.50649,7.50649,0,0,0,19.92535,30h.72113a1,1,0,0,0,0-2ZM12.5,5.5A5.50626,5.50626,0,0,1,17.90442,10H7.09558A5.50626,5.50626,0,0,1,12.5,5.5ZM7,12H18v3.3197L7,21.67053V12Zm5.5,22.5A5.50626,5.50626,0,0,1,7.09558,30H17.90442A5.50626,5.50626,0,0,1,12.5,34.5ZM7,28V25.22778L18,18.877V28Z"/>
+    </svg>
+    <h6 style="margin-top: 20px; ">Beauty & Spas</h6>
+  </button>
+</a>
+
+
+<a href="#" class="button-link">
+  <button style="height: 200px; width: 200px; background-color: white;" class="cat-button">
+    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #e9e9e9;
+          }
+    
+          .cls-2 {
+            fill: #2b273c;
+          }
+    
+          .cls-3 {
+            fill: #ef3c3c;
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="M36,11V2H26V5H22v6h5.04388a3,3,0,0,1,2.88459,2.17584L32.30682,21.5h-24L8.73541,20H5.70831a1.70832,1.70832,0,0,1,0-3.41663H7.23877L9,18.5v.57385l1.68512-5.898A3.00005,3.00005,0,0,1,13.5697,11H14V6H4v8H2V36H7V32l6-1v5H26.98724L27,31h6l-.01276,5H38V11ZM10.5,28A2.5,2.5,0,1,1,13,25.5,2.5,2.5,0,0,1,10.5,28Zm20,0A2.5,2.5,0,1,1,33,25.5,2.5,2.5,0,0,1,30.5,28Zm4.313-8H32l-.4787-1.5,1.76123-1.91663H34.813A1.70832,1.70832,0,0,1,34.813,20Z"/>
+      <path class="cls-2" d="M31.9873,38.01562h-4a1.99887,1.99887,0,0,1-2-2.00683L26,30.99707l2,.00586-.0127,5.01269h4L32,30.99707l2,.00586-.0127,5.01758A2.00471,2.00471,0,0,1,31.9873,38.01562Z"/>
+      <path class="cls-2" d="M12,38H8a2.0026,2.0026,0,0,1-2-2V32H8v4h4V31h2v5A2.0026,2.0026,0,0,1,12,38Z"/>
+      <path class="cls-2" d="M34.81249,15.583H33.28223a.99947.99947,0,0,0-.73633.32324l-.60785.6618-1.04743-3.66668A4.01837,4.01837,0,0,0,27.044,10H13.56934a4.01545,4.01545,0,0,0-3.84571,2.90137L8.65387,16.64471l-.67828-.73846a.99951.99951,0,0,0-.73633-.32324H5.708a2.7085,2.7085,0,0,0,0,5.417H7.40918l-.06445.22559a1.00029,1.00029,0,0,0,1.92382.54882l2.37891-8.32421A2.00625,2.00625,0,0,1,13.56934,12H27.044a2.0083,2.0083,0,0,1,1.92285,1.4502l2.37793,8.32421a1.00106,1.00106,0,0,0,.96093.72559,1.02894,1.02894,0,0,0,.27539-.03809,1.00077,1.00077,0,0,0,.6875-1.23632L33.2041,21h1.60839a2.7085,2.7085,0,1,0,0-5.417ZM5.708,19a.7085.7085,0,0,1,0-1.417H6.7998l1.2096,1.31671L7.98077,19Zm29.10448,0H32.63281l-.05053-.17676,1.1394-1.24023h1.09081a.7085.7085,0,1,1,0,1.417Z"/>
+      <path class="cls-3" d="M35.37891,22.11523A5.46546,5.46546,0,0,0,31.043,20H9.57031a5.498,5.498,0,0,0-5.335,6.834l1.60156,6.40821A.99878.99878,0,0,0,6.80664,34h27a.99962.99962,0,0,0,.96973-.75781L36.37891,26.834A5.46639,5.46639,0,0,0,35.37891,22.11523ZM10.5,28A2.5,2.5,0,1,1,13,25.5,2.5,2.5,0,0,1,10.5,28Zm20,0A2.5,2.5,0,1,1,33,25.5,2.5,2.5,0,0,1,30.5,28Z"/>
+      <path class="cls-2" d="M25.14648,29h-9a1,1,0,1,1,0-2h9a1,1,0,0,1,0,2Z"/>
+      <path class="cls-2" d="M25.14648,32h-9a1,1,0,1,1,0-2h9a1,1,0,0,1,0,2Z"/>
+    </svg>
+    <h6 style="margin-top: 20px;">Automotive</h6>
+  </button>
+</a>
+
+
+
+<a href="#" class="button-link">
+  <button style="height: 200px; width: 200px; background-color: white;" class="cat-button">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M34.3831 6H16.1678C14.8783 3.40973 12.2131 1.625 9.12298 1.625C6.03784 1.625 3.39447 3.41602 2.10291 6H8.24798L9.99798 9.5L8.24798 13H2.10291C3.82453 16.4443 7.94794 18.4797 12.3179 16.7425C14.0511 16.0535 15.4539 14.6902 16.2266 13H26V7H31V13H34.3831C36.3161 13 37.8831 11.433 37.8831 9.5C37.8831 7.56702 36.3161 6 34.3831 6H34.3831Z" fill="#EDECEC"/>
+      <path d="M32 18H30V8H27V14H25V7C25 6.44727 25.4473 6 26 6H31C31.5527 6 32 6.44727 32 7V18Z" fill="#2B273C"/>
+      <path d="M34 20V36H31V29C31 26.794 29.206 25 27 25C24.794 25 23 26.794 23 29V36H6V24.1231L18.4824 17.251C18.8018 17.0752 19 16.7393 19 16.375V10.5586H17V15.7842L4.51758 22.6562C4.19824 22.832 4 23.168 4 23.5322V37C4 37.5527 4.44727 38 5 38H35C35.5527 38 36 37.5527 36 37V20H34ZM25 36V29C25 27.8975 25.8975 27 27 27C28.1025 27 29 27.8975 29 29V36H25Z" fill="#2B273C"/>
+      <path d="M11 25C10.4473 25 10 25.4473 10 26V32C10 32.5527 10.4473 33 11 33H19C19.5527 33 20 32.5527 20 32V26C20 25.4473 19.5527 25 19 25H11ZM18 31H12V27H18V31Z" fill="#2B273C"/>
+      <path d="M37.501 18.2803L17.501 6.71484C17.1904 6.53515 16.8106 6.53613 16.5 6.71386C16.1904 6.89257 16 7.22265 16 7.58007V9.52734C16 9.8789 16.1846 10.2041 16.4863 10.3848L36.4863 22.3652C36.6445 22.46 36.8223 22.5078 37 22.5078C37.1699 22.5078 37.3398 22.4648 37.4932 22.3779C37.8066 22.2002 38 21.8682 38 21.5078V19.1455C38 18.7881 37.8096 18.459 37.501 18.2803V18.2803Z" fill="#FA4D4D"/>
+      <path d="M18.501 14.1006C18.1904 13.9209 17.8096 13.9209 17.501 14.0996L2.50098 22.7334C2.19141 22.9111 2 23.2422 2 23.5996V25.8975C2 26.2578 2.19336 26.5898 2.50684 26.7676C2.66016 26.8545 2.83008 26.8975 3 26.8975C3.17773 26.8975 3.35645 26.8496 3.51367 26.7549L18.5137 17.7647C18.8154 17.584 19 17.2588 19 16.9072V14.9658C19 14.6084 18.8096 14.2793 18.501 14.1006V14.1006Z" fill="#FA4D4D"/>
+      </svg>
+    <h6 style="margin-top: 20px; ">Home Services</h6>
+  </button>
+</a>
+
+<a href="#" class="button-link">
+  <button style="height: 200px; width: 200px; background-color: white;" class="cat-button">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+      <g fill="none" fill-rule="evenodd">
+        <circle cx="20" cy="20" r="10" fill="#EEEEEF" fill-rule="nonzero"/>
+        <circle cx="20" cy="20" r="1.5" fill="#2B273C" fill-rule="nonzero"/>
+        <circle cx="10" cy="20" r="1.5" fill="#2B273C" fill-rule="nonzero"/>
+        <circle cx="30" cy="20" r="1.5" fill="#2B273C" fill-rule="nonzero"/>
+      </g>
+    </svg>
+    <h6 style="margin-top: 20px; ">More</h6>
+  </button>
+</a>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
